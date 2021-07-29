@@ -6,4 +6,7 @@ from django.dispatch import receiver
 @receiver(m2m_changed, sender=Sale.position.through)
 def calculate_all_price(sender, action, instance, **kwargs):
 
-    print(action)
+    totol_price = 0
+    if action == 'post_add' or action == 'post_remove':
+        # for item in instance.position():
+        print('hi')

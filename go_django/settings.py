@@ -50,7 +50,7 @@ INSTALLED_APPS = [
 
 ]
 
-CRISPY_TEMPLATES_PACK = 'bootstrap4'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -130,7 +130,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / 'all_files',]
+STATICFILES_DIRS = [BASE_DIR / 'all_files', ]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'all_media'
